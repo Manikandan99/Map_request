@@ -1,0 +1,27 @@
+
+ERROR 2022-02-07 01:25:04,406 [[MuleRuntime].uber.01: [map_request].map_requestFlow.CPU_INTENSIVE @34fedce4] [processor: map_requestFlow/processors/2; event: d1a535e0-87f7-11ec-871b-005056a27a2a] org.mule.runtime.core.internal.exception.OnErrorPropagateHandler: 
+********************************************************************************
+Message               : "Script '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns0="http://decisionresearch.com/RateMaker"> 
+<soapenv:Header/> 
+<soapenv:Body> 
+payload.substring(payload.indexOf("?>")+2) 
+</soapenv:Body> 
+</soapenv:Envelope> ' has errors: 
+	Invalid input ':', expected ??? (line 1, column 9):
+ at 1 : 1" evaluating expression: "#[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns0="http://decisionresearch.com/RateMaker"> 
+<soapenv:Header/> 
+<soapenv:Body> 
+payload.substring(payload.indexOf("?>")+2) 
+</soapenv:Body> 
+</soapenv:Envelope>]".
+Element               : map_requestFlow/processors/2 @ map_request:map_request.xml:27 (Set Payload)
+Element DSL           : <set-payload value="#[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns0="http://decisionresearch.com/RateMaker">
+<soapenv:Header/>
+<soapenv:Body> 
+payload.substring(payload.indexOf("?>")+2) 
+</soapenv:Body>
+</soapenv:Envelope>]" doc:name="Set Payload" doc:id="faf2bc3b-e7a3-4708-910b-daeb05bb5f6e"></set-payload>
+Error type            : MULE:EXPRESSION
+FlowStack             : at map_requestFlow(map_requestFlow/processors/2 @ map_request:map_request.xml:27 (Set Payload))
+
+  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
