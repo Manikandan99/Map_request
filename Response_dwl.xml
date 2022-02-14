@@ -1,0 +1,21 @@
+<DTOSteps>
+    <DTOStep Order="1" Name="Rated Premium" Operation="=" Factor="0" Value="0">
+        <DTOSteps>
+            <DTOStep Order="1" Name="Property Damage" Operation="=" Factor="0" Value="0">
+                <DTOSteps>
+                    <DTOStep Order="1" Name="AOI" Operation="=" Factor="0" Value="0"/>
+                    <DTOStep Order="2" Name="Base" Operation="-" Factor="0" Value="0"/>
+                    <DTOStep Order="3" Name="Deductible" Operation="-" Factor="0" Value="0"/>
+                </DTOSteps>
+            </DTOStep>
+            <DTOStep Order="2" Name="Business Income And Extra Expense" Operation="+" Factor="0" Value="0">
+                <DTOSteps>
+                    <DTOStep Order="4" Name="AOI" Operation="=" Factor="0" Value="0"/>
+                    <DTOStep Order="5" Name="Base" Operation="-" Factor="0" Value="0"/>
+                    <DTOStep Order="6" Name="Deductible" Operation="-" Factor="0" Value="0"/>
+                </DTOSteps>
+            </DTOStep>
+        </DTOSteps>
+    </DTOStep>
+    <DTOStep Order="2" Name="Term Factor" Operation="X" Factor="0" Value="0"/>
+</DTOSteps>
