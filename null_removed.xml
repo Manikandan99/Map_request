@@ -3,24 +3,24 @@
     <DTOLine id="Line-101746978-972142087" StatusCd="Active" >
         <DTOCoverage id="Coverage-1713637162-341585712" CoverageCd="MINP" >
             <DTOSteps>
-                <DTOStep Order="1" Name="Premium"value=8 factor=8/>
-                <DTOStep Order="2" Name="Term Factor" value=9 factor=9>
+                <DTOStep Order="1" Name="Premium" value="8" factor="8"/>
+                <DTOStep Order="2" Name="Term Factor" value="9" factor="9">
                     <DTOSteps>
-                            <DTOStep Order="1" Name="Minimum Premium" value=10 factor=10/>
-                            <DTOStep Order="2" Name="Rated Premium" />
+                        <DTOStep Order="1" Name="Minimum Premium" value="10" factor="10"/>
+                        <DTOStep Order="2" Name="Rated Premium" value="null" factor="null"/>
                     </DTOSteps>
                 </DTOStep>
             </DTOSteps>
         </DTOCoverage>
         <DTOCoverage id="Coverage-763105832-915106268" CoverageCd="TRIAL">
             <DTOSteps id="Steps-Coverage-763105832-915106268">
-                <DTOStep Order="1" Name="Premium" value=18 factor=18 />
+                <DTOStep Order="1" Name="Premium" value="18" factor="18" />
             </DTOSteps>
         </DTOCoverage>
     </DTOLine>
     <DTOCoverage id="Coverage-863105832-915106268" CoverageCd="EBRK" >
         <DTOSteps id="Steps-Coverage-863105832-915106268">
-            <DTOStep Order="1" Name="Base Rate"/>
+            <DTOStep Order="1" Name="Base Rate" value="null" factor="null"/>
         </DTOSteps>
     </DTOCoverage>
 </DTOApplication>
