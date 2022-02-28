@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DTOApplication id="Application-1660258480-1493174910" ApplicationNumber="AP-00006354">
+    <DTOLine id="Line-101746978-972142087" StatusCd="Active" >
+        <DTOCoverage id="Coverage-1713637162-341585712" CoverageCd="MINP" >
+            <DTOSteps>
+                <DTOStep Order="1" Name="Premium"value=8 factor=8/>
+                <DTOStep Order="2" Name="Term Factor" value=9 factor=9>
+                    <DTOSteps>
+                            <DTOStep Order="1" Name="Minimum Premium" value=10 factor=10/>
+                            <DTOStep Order="2" Name="Rated Premium" />
+                    </DTOSteps>
+                </DTOStep>
+            </DTOSteps>
+        </DTOCoverage>
+        <DTOCoverage id="Coverage-763105832-915106268" CoverageCd="TRIAL">
+            <DTOSteps id="Steps-Coverage-763105832-915106268">
+                <DTOStep Order="1" Name="Premium" value=18 factor=18 />
+            </DTOSteps>
+        </DTOCoverage>
+    </DTOLine>
+    <DTOCoverage id="Coverage-863105832-915106268" CoverageCd="EBRK" >
+        <DTOSteps id="Steps-Coverage-863105832-915106268">
+            <DTOStep Order="1" Name="Base Rate"/>
+        </DTOSteps>
+    </DTOCoverage>
+</DTOApplication>
