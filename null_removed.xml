@@ -7,7 +7,7 @@
                 <DTOStep Order="2" Name="Term Factor" value="9" factor="9">
                     <DTOSteps>
                         <DTOStep Order="1" Name="Minimum Premium" value="10" factor="10"/>
-                        <DTOStep Order="2" Name="Rated Premium" value="null" factor="null"/>
+                        <DTOStep Order="2" Name="Rated Premium" />
                     </DTOSteps>
                 </DTOStep>
             </DTOSteps>
@@ -20,7 +20,7 @@
     </DTOLine>
     <DTOCoverage id="Coverage-863105832-915106268" CoverageCd="EBRK" >
         <DTOSteps id="Steps-Coverage-863105832-915106268">
-            <DTOStep Order="1" Name="Base Rate" value="null" factor="null"/>
+            <DTOStep Order="1" Name="Base Rate" />
         </DTOSteps>
     </DTOCoverage>
 </DTOApplication>
