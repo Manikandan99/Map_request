@@ -50,6 +50,13 @@ output application/java
 		ACPlumbing: payload.DTOApplication.*DTOBasicPolicy[0].@PolicyPlumbingYear default "",
 		ACRoofing: payload.DTOApplication.*DTOBasicPolicy[0].@PolicyRoofingYear default "",
 		ACWiring: payload.DTOApplication.*DTOBasicPolicy[0].@PolicyWiringYear default "",
-		NumLocInsp: payload.DTOApplication.*DTOBasicPolicy[0].@InspectionLocations default ""
+		NumLocInsp: payload.DTOApplication.*DTOBasicPolicy[0].@InspectionLocations default "",
+		(
+			payload.DTOApplication.*DTOLossHistory[?($.@StatusCd == "Active")] default [] orderBy -($.@LossDt) map using (dispIdx = zeroPad2($$+1)) {
+				'CauseOfLoss$dispIdx': $.@LossCauseCd,
+				'DateOfLoss$dispIdx': $.@LossDt,
+				'IncurredAmt$dispIdx': $.@TotalIncurred
+			}				
+		)
 	}	
 }
